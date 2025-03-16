@@ -1,0 +1,118 @@
+/* getting google fonts from montserrat */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", serif;
+}
+
+body{
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+}
+
+h1{
+    font-size: 50px;
+}
+
+.container{
+    /* padding: 50px; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.cls{
+    display: flex;
+    margin-top: 30px;
+    background-color: #3a4452;
+    width: 25%;
+    height: 53%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cls form input{
+    border: 0px;
+    box-shadow: -8px -8px -8px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
+    background: #5d6d83;
+    cursor: pointer;
+    /* font-size: 15px; */
+    margin: 5px;
+    color: #fff;
+}
+
+.set input{
+    width: 50px;
+    height: 50px;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 25px 5px;
+}
+
+form .display input{
+    background: transparent;
+    text-align: right;
+    flex: 1;
+    font-size: 30px;
+    box-shadow: none;
+}
+form input.operator{
+    color: aquamarine;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .cls {
+        width: 60%;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .set input {
+        width: 55px;
+        height: 55px;
+        font-size: 18px;
+    }
+
+    .display input {
+        font-size: 22px;
+        height: 50px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .cls {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .set input {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .display input {
+        font-size: 20px;
+        height: 45px;
+    }
+}
